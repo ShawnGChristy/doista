@@ -4,7 +4,7 @@ class TodoListsController < ApplicationController
   # GET /todo_lists
   # GET /todo_lists.json
   def index
-    @todo_lists = TodoList.all
+    @todo_lists = TodoList.paginate(:page => params[:page], :per_page => 7)
   end
 
   # GET /todo_lists/1
@@ -66,6 +66,8 @@ class TodoListsController < ApplicationController
     def set_todo_list
       @todo_list = TodoList.find(params[:id])
     end
+
+    
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def todo_list_params

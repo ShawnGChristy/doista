@@ -1,22 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p><div class="todo_list_title"> 
   <strong>Title:</strong>
   <%= @todo_list.title %>
-</p>
+</p></div>
 
-<p>
-  <strong>Description:</strong>
+<p><div class="todo_list_description">
+  Description:
   <%= @todo_list.description %>
-</p>
+
+</p></div>
 
 <div id="todo_items_wrapper">
-  <%= render @todo_list.todo_items %>
+  <%= render @todo_list.todo_items.paginate(:page => params[:page], :per_page => 7) %>
+
 
   <div id="form">
     <%= render "todo_items/form" %>
   </div>
   
+
 </div>
 
 <%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |

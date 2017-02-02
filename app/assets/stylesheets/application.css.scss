@@ -1,0 +1,164 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+
+$paper: #f4f4f4;
+$graphite: #373738;
+
+.navbar {
+  background-color: #F6D155;
+  font-family: 'Exo 2', sans-serif;
+  position: absolute;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.42857143;  
+}
+
+
+.b-layout {
+  width: 100%;
+  height: 100%;
+  margin-top: -80px;
+  transform: translate(-50%, -50%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+
+  vertical-align: middle;
+  text-align: center;
+  background: $graphite;
+}
+
+.b-content {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  width: 60%;
+  border-radius: 5px;
+  background: $paper;
+  padding: 30px;
+  margin: auto;
+
+}
+
+.todo_list_descriptor {
+  font-style: italic;
+  width: 100%; 
+  margin: auto;
+  max-width: 80ch;
+}
+
+.todo_list_description {
+  
+  width: 100%; 
+  margin: auto;
+  max-width: 80ch;
+  height: 100%;
+  margin-bottom: 2.5em; 
+}
+
+.todo_list_title {
+  width: 100%; 
+  margin: auto;
+  max-width: 80ch;
+  height: 100%;
+  margin-bottom: .5em; 
+}
+
+.todo_header {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+  }
+
+.todo_items_wrapper {
+  margin: auto;
+  position: relative;
+
+  
+}
+
+.todo_lists {
+  
+}
+ 
+.row
+{
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50%;
+  text-align: center;
+  position: relative;
+  display: block;
+    margin: auto;
+  margin-bottom: -1px;
+  
+  border: 1px solid $paper;
+  border-radius: 4px;
+
+
+  .complete {
+      width: 10%;
+      float: left;
+      
+    
+      padding: .5em 0;
+    }
+
+    .todo_item {
+      width: 80%;
+      float: left;
+      padding: .5em;
+      text-align: left;
+
+      }
+
+  .edit {
+    width: 10%;
+    float: left;
+    
+      
+    padding: .5em 0;
+  }
+
+  .trash {
+    width: 10%;
+    float: left;
+    
+      
+    padding: .5em 0;
+  }
+
+
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,600|Roboto');
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootstrap/theme";

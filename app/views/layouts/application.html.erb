@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Doista</title>
+    <script src="https://use.fontawesome.com/e514a4810c.js"></script>
+    
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +11,19 @@
   </head>
 
   <body>
-    <%= yield %>
+
+  <%= render partial: "shared/navbar" %>
+
+<table class="b-layout">
+  <tr>
+    <td>
+      <div class="b-content">
+     <%= yield %>
+  </div>
+    </td>
+  </tr>
+</table>
+        
+    
   </body>
 </html>
