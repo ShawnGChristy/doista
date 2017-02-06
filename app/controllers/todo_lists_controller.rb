@@ -10,6 +10,7 @@ class TodoListsController < ApplicationController
   # GET /todo_lists/1
   # GET /todo_lists/1.json
   def show
+    @items = @todo_list.todo_items.paginate(:page => params[:page], :per_page => 7) 
   end
 
   # GET /todo_lists/new

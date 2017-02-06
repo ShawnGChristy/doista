@@ -33,8 +33,11 @@ html, body {
   height: 100%;
   width: 100%;
   font-size: 14px;
-  line-height: 1.42857143;  
+  line-height: 1.5;  
 }
+
+
+
 
 
 .b-layout {
@@ -45,7 +48,7 @@ html, body {
   position: relative;
   top: 50%;
   left: 50%;
-
+  
 
   vertical-align: middle;
   text-align: center;
@@ -62,6 +65,8 @@ html, body {
   margin: auto;
 
 }
+
+
 
 .todo_list_descriptor {
   font-style: italic;
@@ -95,13 +100,8 @@ html, body {
 .todo_items_wrapper {
   margin: auto;
   position: relative;
-
-  
 }
 
-.todo_lists {
-  
-}
  
 .row
 {
@@ -151,11 +151,13 @@ html, body {
     
       
     padding: .5em 0;
+
   }
 
 
 
 }
+
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2:400,600|Roboto');
 
